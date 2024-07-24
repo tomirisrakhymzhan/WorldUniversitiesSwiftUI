@@ -11,6 +11,10 @@
 		BF394AA52C4FD93F009C9945 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF394AA42C4FD93F009C9945 /* ContentView.swift */; };
 		BF394AA72C4FD941009C9945 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF394AA62C4FD941009C9945 /* Assets.xcassets */; };
 		BF394AAA2C4FD941009C9945 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF394AA92C4FD941009C9945 /* Preview Assets.xcassets */; };
+		BF394AB12C4FD957009C9945 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF394AB02C4FD957009C9945 /* LabelView.swift */; };
+		BF394AB52C4FDB3E009C9945 /* UniversityRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF394AB42C4FDB3E009C9945 /* UniversityRowView.swift */; };
+		BF394AB82C4FDEDC009C9945 /* University.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF394AB72C4FDEDC009C9945 /* University.swift */; };
+		BF394ABB2C5006D6009C9945 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BF394ABA2C5006D6009C9945 /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		BF394AA42C4FD93F009C9945 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BF394AA62C4FD941009C9945 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF394AA92C4FD941009C9945 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BF394AB02C4FD957009C9945 /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
+		BF394AB42C4FDB3E009C9945 /* UniversityRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityRowView.swift; sourceTree = "<group>"; };
+		BF394AB72C4FDEDC009C9945 /* University.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = University.swift; sourceTree = "<group>"; };
+		BF394ABE2C511BAF009C9945 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF394ABB2C5006D6009C9945 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +60,14 @@
 		BF394AA12C4FD93F009C9945 /* WorldUniversitiesSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				BF394ABE2C511BAF009C9945 /* Info.plist */,
+				BF394AB62C4FDECC009C9945 /* Model */,
 				BF394AA22C4FD93F009C9945 /* WorldUniversitiesSwiftUIApp.swift */,
 				BF394AA42C4FD93F009C9945 /* ContentView.swift */,
 				BF394AA62C4FD941009C9945 /* Assets.xcassets */,
 				BF394AA82C4FD941009C9945 /* Preview Content */,
+				BF394AB02C4FD957009C9945 /* LabelView.swift */,
+				BF394AB42C4FDB3E009C9945 /* UniversityRowView.swift */,
 			);
 			path = WorldUniversitiesSwiftUI;
 			sourceTree = "<group>";
@@ -65,6 +78,14 @@
 				BF394AA92C4FD941009C9945 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BF394AB62C4FDECC009C9945 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF394AB72C4FDEDC009C9945 /* University.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +104,9 @@
 			dependencies = (
 			);
 			name = WorldUniversitiesSwiftUI;
+			packageProductDependencies = (
+				BF394ABA2C5006D6009C9945 /* SDWebImageSwiftUI */,
+			);
 			productName = WorldUniversitiesSwiftUI;
 			productReference = BF394A9F2C4FD93F009C9945 /* WorldUniversitiesSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +135,9 @@
 				Base,
 			);
 			mainGroup = BF394A962C4FD93F009C9945;
+			packageReferences = (
+				BF394AB92C5006D6009C9945 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = BF394AA02C4FD93F009C9945 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +166,9 @@
 			files = (
 				BF394AA52C4FD93F009C9945 /* ContentView.swift in Sources */,
 				BF394AA32C4FD93F009C9945 /* WorldUniversitiesSwiftUIApp.swift in Sources */,
+				BF394AB12C4FD957009C9945 /* LabelView.swift in Sources */,
+				BF394AB52C4FDB3E009C9945 /* UniversityRowView.swift in Sources */,
+				BF394AB82C4FDEDC009C9945 /* University.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +304,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WorldUniversitiesSwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WorldUniversitiesSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,6 +333,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WorldUniversitiesSwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WorldUniversitiesSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -342,6 +374,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BF394AB92C5006D6009C9945 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BF394ABA2C5006D6009C9945 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF394AB92C5006D6009C9945 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BF394A972C4FD93F009C9945 /* Project object */;
 }
